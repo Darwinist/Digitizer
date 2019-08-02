@@ -1,0 +1,2 @@
+// Link IOKit
+OTHER_LDFLAGS = $(inherited) -framework IOKit
