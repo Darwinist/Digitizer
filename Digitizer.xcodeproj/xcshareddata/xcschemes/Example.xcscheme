@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B94F58C122F32D9F00821194"
-               BuildableName = "Digitizer.app"
-               BlueprintName = "Digitizer"
+               BlueprintIdentifier = "B907716222F4CC3400C106B9"
+               BuildableName = "Example.app"
+               BlueprintName = "Example"
                ReferencedContainer = "container:Digitizer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,9 +32,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B94F58C122F32D9F00821194"
-            BuildableName = "Digitizer.app"
-            BlueprintName = "Digitizer"
+            BlueprintIdentifier = "B907716222F4CC3400C106B9"
+            BuildableName = "Example.app"
+            BlueprintName = "Example"
             ReferencedContainer = "container:Digitizer.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -55,9 +55,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B94F58C122F32D9F00821194"
-            BuildableName = "Digitizer.app"
-            BlueprintName = "Digitizer"
+            BlueprintIdentifier = "B907716222F4CC3400C106B9"
+            BuildableName = "Example.app"
+            BlueprintName = "Example"
             ReferencedContainer = "container:Digitizer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -74,9 +74,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B94F58C122F32D9F00821194"
-            BuildableName = "Digitizer.app"
-            BlueprintName = "Digitizer"
+            BlueprintIdentifier = "B907716222F4CC3400C106B9"
+            BuildableName = "Example.app"
+            BlueprintName = "Example"
             ReferencedContainer = "container:Digitizer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

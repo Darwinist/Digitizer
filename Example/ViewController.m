@@ -1,27 +1,16 @@
 //
 //  ViewController.m
-//  Digitizer
+//  Example
 //
-//  Created by Jonathan Cardasis (C) on 8/1/19.
+//  Created by Jonathan Cardasis (C) on 8/2/19.
 //  Copyright © 2019 Jonathan Cardasis (C). All rights reserved.
 //
 
 #import "ViewController.h"
-#import "UIView+Digitizer.h"
-
-
-@interface ViewController ()
-@end
+#import "TapView.h"
+#import <Digitizer/Digitizer.h>
 
 @implementation ViewController
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
-    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tappedView:)];
-    [self.view addGestureRecognizer:tapGesture];
-    
-}
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
@@ -30,7 +19,12 @@
     [self.view simulateTouchAtPoint:touchPoint];
 }
 
-- (void)tappedView:(UITapGestureRecognizer*)gesture {
+
+- (void)loadView {
+    self.view = [[TapView alloc] init];
+}
+
+- (void)tappedView:(UITapGestureRecognizer*)gesture { // TODO: remove
     CGPoint location = [gesture locationInView:self.view];
     
     CGSize size = CGSizeMake(10, 10);
@@ -42,10 +36,6 @@
     
     [self.view addSubview:newView];
 }
-
-
-
-
 
 
 

@@ -1,8 +1,8 @@
 //
 //  AppDelegate.m
-//  Digitizer
+//  Example
 //
-//  Created by Jonathan Cardasis (C) on 8/1/19.
+//  Created by Jonathan Cardasis (C) on 8/2/19.
 //  Copyright © 2019 Jonathan Cardasis (C). All rights reserved.
 //
 
