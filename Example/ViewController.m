@@ -10,33 +10,38 @@
 #import "TapView.h"
 #import <Digitizer/Digitizer.h>
 
+@interface ViewController ()
+@property (nonatomic) UIColor *userTapColor;
+@property (nonatomic) UIColor *simulatedTapColor;
+@end
+
 @implementation ViewController
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
-    CGPoint touchPoint = CGPointMake(100, 200);
-    [self.view simulateTouchAtPoint:touchPoint];
+    NSArray *points = @[
+                     [NSValue valueWithCGPoint:CGPointMake(100, 200)],
+                     [NSValue valueWithCGPoint:CGPointMake(200, 200)],
+                     [NSValue valueWithCGPoint:CGPointMake(300, 200)]
+                     ];
+    
+    self.tapView.indicatorColor = self.simulatedTapColor;
+    [self.tapView simulateTouchesAtPoints:points holdDuration:2.0]; // Simulate a touch
+    self.tapView.indicatorColor = self.userTapColor;
 }
 
-
 - (void)loadView {
+    self.userTapColor = [UIColor colorWithRed:33/255.0 green:150/255.0 blue:243/255.0 alpha:1.0];
+    self.simulatedTapColor = [UIColor colorWithRed:244/255.0 green:67/255.0 blue:54/255.0 alpha:1.0];
+    
     self.view = [[TapView alloc] init];
 }
 
-- (void)tappedView:(UITapGestureRecognizer*)gesture { // TODO: remove
-    CGPoint location = [gesture locationInView:self.view];
-    
-    CGSize size = CGSizeMake(10, 10);
-    
-    UIView *newView = [[UIView alloc] initWithFrame:CGRectMake(location.x - size.width / 2.0, location.y - size.height / 2.0, size.width, size.height)];
-    newView.layer.cornerRadius = size.width / 2.0;
-    newView.layer.masksToBounds = true;
-    newView.backgroundColor = UIColor.redColor;
-    
-    [self.view addSubview:newView];
+#pragma mark - Private
+
+- (TapView*)tapView {
+    return (TapView*)self.view;
 }
-
-
 
 @end
