@@ -25,6 +25,8 @@
 		B907717F22F4CDA300C106B9 /* IOHIDEvents.h in Headers */ = {isa = PBXBuildFile; fileRef = B94F58DB22F32EF100821194 /* IOHIDEvents.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B907718022F4CDAA00C106B9 /* UITouch+Digitizer.h in Headers */ = {isa = PBXBuildFile; fileRef = B907711A22F4A40700C106B9 /* UITouch+Digitizer.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B907718322F4CDF100C106B9 /* TapView.m in Sources */ = {isa = PBXBuildFile; fileRef = B907718222F4CDF100C106B9 /* TapView.m */; };
+		FC57CCF422F7B8D2003B0AB1 /* UIEvent+Digitizer.h in Headers */ = {isa = PBXBuildFile; fileRef = FC57CCF222F7B8D2003B0AB1 /* UIEvent+Digitizer.h */; };
+		FC57CCF522F7B8D2003B0AB1 /* UIEvent+Digitizer.m in Sources */ = {isa = PBXBuildFile; fileRef = FC57CCF322F7B8D2003B0AB1 /* UIEvent+Digitizer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +95,8 @@
 		B907718222F4CDF100C106B9 /* TapView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TapView.m; sourceTree = "<group>"; };
 		B94F58DB22F32EF100821194 /* IOHIDEvents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IOHIDEvents.h; sourceTree = "<group>"; };
 		B94F58EB22F380D200821194 /* OSTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSTypes.h; sourceTree = "<group>"; };
+		FC57CCF222F7B8D2003B0AB1 /* UIEvent+Digitizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIEvent+Digitizer.h"; sourceTree = "<group>"; };
+		FC57CCF322F7B8D2003B0AB1 /* UIEvent+Digitizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIEvent+Digitizer.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +143,8 @@
 				B907710C22F479AE00C106B9 /* IOHIDEvents.m */,
 				B907711A22F4A40700C106B9 /* UITouch+Digitizer.h */,
 				B907711B22F4A40700C106B9 /* UITouch+Digitizer.m */,
+				FC57CCF222F7B8D2003B0AB1 /* UIEvent+Digitizer.h */,
+				FC57CCF322F7B8D2003B0AB1 /* UIEvent+Digitizer.m */,
 			);
 			path = Internal;
 			sourceTree = "<group>";
@@ -257,6 +263,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC57CCF422F7B8D2003B0AB1 /* UIEvent+Digitizer.h in Headers */,
 				B907718022F4CDAA00C106B9 /* UITouch+Digitizer.h in Headers */,
 				B907715022F4CB8E00C106B9 /* Digitizer.h in Headers */,
 				B907717F22F4CDA300C106B9 /* IOHIDEvents.h in Headers */,
@@ -395,6 +402,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC57CCF522F7B8D2003B0AB1 /* UIEvent+Digitizer.m in Sources */,
 				B907715C22F4CBBA00C106B9 /* IOHIDEvents.m in Sources */,
 				B907715E22F4CBC100C106B9 /* UIView+Digitizer.m in Sources */,
 				B907715D22F4CBBE00C106B9 /* UITouch+Digitizer.m in Sources */,

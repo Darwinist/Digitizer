@@ -26,7 +26,7 @@
         [self setPhase:UITouchPhaseBegan];
         [self _setIsFirstTouchForView:YES];
         [self setIsTap:YES];
-        [self updateTimestamp];
+        [self setTimestamp:[[NSProcessInfo processInfo] systemUptime]];
         
         if ([self respondsToSelector:@selector(setGestureView:)]) {
             [self setGestureView:hitTestView];
@@ -41,10 +41,6 @@
 - (id)initAtPoint:(CGPoint)point inView:(UIView*)view {
     UIWindow *window = view.window;
     return [self initAtPoint:[window convertPoint:point fromView:view] inWindow:window];
-}
-
-- (void)updateTimestamp {
-    [self setTimestamp:[[NSProcessInfo processInfo] systemUptime]];
 }
 
 # pragma mark - Private

@@ -8,9 +8,8 @@
 
 #import "UIView+Digitizer.h"
 #import "UITouch+Digitizer.h"
+#import "UIEvent+Digitizer.h"
 #import "IOHIDEvents.h"
-#import "UIApplication+PrivateHeaders.h"
-#import "UIEvent+PrivateHeaders.h"
 #import "UITouch+PrivateHeaders.h"
 
 @implementation UIView (Digitizer)
@@ -35,24 +34,27 @@
 
 - (void)dispatchTouchsAtPoints:(NSArray<NSValue*>*)points holdDuration:(NSTimeInterval)duration {
     NSMutableArray *touches = [[NSMutableArray alloc] init];
+    NSTimeInterval now = [[NSProcessInfo processInfo] systemUptime];
     
     for (NSValue *value in points) {
         CGPoint point = [value CGPointValue];
         UITouch *touch = [[UITouch alloc] initAtPoint:point inView:self];
         
-        [touch updateTimestamp]; // TODO: Make the timestamp occur before the for-loop so all touches have exact same timestamp.
+        [touch setTimestamp:now];
         [touch setPhase:UITouchPhaseBegan];
         [touches addObject:touch];
     }
     
-    UIEvent *event = [self eventFromTouches:touches];
+    UIEvent *event = [UIEvent eventFromTouches:touches];
     
     // Dispatch Began phase
     [[UIApplication sharedApplication] sendEvent:event];
     
     void (^dispatchTouchEnd)(void) = ^{
+        NSTimeInterval now = [[NSProcessInfo processInfo] systemUptime];
+        
         for (UITouch *touch in touches) {
-            [touch updateTimestamp]; // TODO: Make the timestamp occur before the for-loop so all touches have exact same timestamp.
+            [touch setTimestamp:now];
             [touch setPhase:UITouchPhaseEnded];
             
             // Update self to first responder manually since dispatching event through UIApplication doesn't update it.
@@ -70,23 +72,6 @@
     } else {
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, duration * NSEC_PER_SEC), dispatch_get_main_queue(), dispatchTouchEnd);
     }
-}
-
-- (UIEvent*)eventFromTouches:(NSArray<UITouch*>*)touches { // TODO: Should probably just make a custom UIEvent::init
-    UIEvent *event = [[UIApplication sharedApplication] _touchesEvent];
-    
-    // Clean up before injecting touches
-    [event _clearTouches];
-    
-    IOHIDEventRef touchHIDEvent = IOHIDEventWithTouches(touches);
-    [event _setHIDEvent:touchHIDEvent];
-    CFRelease(touchHIDEvent);
-    
-    for (UITouch *touch in touches) {
-        [event _addTouch:touch forDelayedDelivery:NO];
-    }
-    
-    return event;
 }
 
 @end

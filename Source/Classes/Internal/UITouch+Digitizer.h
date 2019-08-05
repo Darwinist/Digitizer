@@ -16,9 +16,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (id)initAtPoint:(CGPoint)point inView:(UIView*)view;
 
-/// Updates the touch's timestamp to the current system time.
-- (void)updateTimestamp;
-
 @end
 
 NS_ASSUME_NONNULL_END
