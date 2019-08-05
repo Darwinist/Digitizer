@@ -10,3 +10,8 @@ Only a subset of the I/O Kit is needed for digitizer event handling, so a minimu
 
 ### UIKit Headers
 Headers extracted via classdump.
+
+
+### Linking
+Digitizer requires IOKit.framework, which is not located with other iOS system frameworks. We link it at compile time via `-framework IOKit` in _Other Linker Flags_ under _Build Settings_.
+
