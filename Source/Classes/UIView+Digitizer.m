@@ -22,11 +22,11 @@
     [self dispatchTouchsAtPoints:@[[NSNumber valueWithCGPoint:point]] holdDuration:0];
 }
 
-- (void)simulateTouchesAtPoints:(NSArray<NSValue*>*)points {
+- (void)simulateMultiTouchAtPoints:(NSArray<NSValue*>*)points {
     [self dispatchTouchsAtPoints:points holdDuration:0];
 }
 
-- (void)simulateTouchesAtPoints:(NSArray<NSValue*>*)points holdDuration:(NSTimeInterval)holdDuration {
+- (void)simulateMultiTouchAtPoints:(NSArray<NSValue*>*)points holdDuration:(NSTimeInterval)holdDuration {
     [self dispatchTouchsAtPoints:points holdDuration:holdDuration];
 }
 

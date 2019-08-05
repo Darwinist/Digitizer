@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B907714722F4CB8E00C106B9 /* Digitizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B907713E22F4CB8D00C106B9 /* Digitizer.framework */; };
-		B907714E22F4CB8E00C106B9 /* DigitizerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B907714D22F4CB8E00C106B9 /* DigitizerTests.m */; };
 		B907715022F4CB8E00C106B9 /* Digitizer.h in Headers */ = {isa = PBXBuildFile; fileRef = B907714022F4CB8E00C106B9 /* Digitizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B907715C22F4CBBA00C106B9 /* IOHIDEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = B907710C22F479AE00C106B9 /* IOHIDEvents.m */; };
 		B907715D22F4CBBE00C106B9 /* UITouch+Digitizer.m in Sources */ = {isa = PBXBuildFile; fileRef = B907711B22F4A40700C106B9 /* UITouch+Digitizer.m */; };
@@ -25,6 +24,9 @@
 		B907717F22F4CDA300C106B9 /* IOHIDEvents.h in Headers */ = {isa = PBXBuildFile; fileRef = B94F58DB22F32EF100821194 /* IOHIDEvents.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B907718022F4CDAA00C106B9 /* UITouch+Digitizer.h in Headers */ = {isa = PBXBuildFile; fileRef = B907711A22F4A40700C106B9 /* UITouch+Digitizer.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B907718322F4CDF100C106B9 /* TapView.m in Sources */ = {isa = PBXBuildFile; fileRef = B907718222F4CDF100C106B9 /* TapView.m */; };
+		B94F58F122F86D1100821194 /* FakeView.m in Sources */ = {isa = PBXBuildFile; fileRef = B94F58ED22F86D0000821194 /* FakeView.m */; };
+		B94F58F322F8753D00821194 /* UIView+DigitizerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B94F58F222F8753D00821194 /* UIView+DigitizerSpec.m */; };
+		B94F58F822F88C5200821194 /* UIControl+Testing.m in Sources */ = {isa = PBXBuildFile; fileRef = B94F58F722F88C5200821194 /* UIControl+Testing.m */; };
 		FC57CCF422F7B8D2003B0AB1 /* UIEvent+Digitizer.h in Headers */ = {isa = PBXBuildFile; fileRef = FC57CCF222F7B8D2003B0AB1 /* UIEvent+Digitizer.h */; };
 		FC57CCF522F7B8D2003B0AB1 /* UIEvent+Digitizer.m in Sources */ = {isa = PBXBuildFile; fileRef = FC57CCF322F7B8D2003B0AB1 /* UIEvent+Digitizer.m */; };
 /* End PBXBuildFile section */
@@ -43,6 +45,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = B907713D22F4CB8D00C106B9;
 			remoteInfo = Digitizer;
+		};
+		B94F58F422F8776600821194 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B94F58BA22F32D9F00821194 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B907716222F4CC3400C106B9;
+			remoteInfo = Example;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -79,7 +88,6 @@
 		B907714022F4CB8E00C106B9 /* Digitizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Digitizer.h; sourceTree = "<group>"; };
 		B907714122F4CB8E00C106B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B907714622F4CB8E00C106B9 /* DigitizerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DigitizerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B907714D22F4CB8E00C106B9 /* DigitizerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DigitizerTests.m; sourceTree = "<group>"; };
 		B907714F22F4CB8E00C106B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B907716322F4CC3400C106B9 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B907716522F4CC3400C106B9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -95,6 +103,11 @@
 		B907718222F4CDF100C106B9 /* TapView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TapView.m; sourceTree = "<group>"; };
 		B94F58DB22F32EF100821194 /* IOHIDEvents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IOHIDEvents.h; sourceTree = "<group>"; };
 		B94F58EB22F380D200821194 /* OSTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSTypes.h; sourceTree = "<group>"; };
+		B94F58EC22F86D0000821194 /* FakeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FakeView.h; sourceTree = "<group>"; };
+		B94F58ED22F86D0000821194 /* FakeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FakeView.m; sourceTree = "<group>"; };
+		B94F58F222F8753D00821194 /* UIView+DigitizerSpec.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+DigitizerSpec.m"; sourceTree = "<group>"; };
+		B94F58F622F88C5200821194 /* UIControl+Testing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIControl+Testing.h"; sourceTree = "<group>"; };
+		B94F58F722F88C5200821194 /* UIControl+Testing.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIControl+Testing.m"; sourceTree = "<group>"; };
 		FC57CCF222F7B8D2003B0AB1 /* UIEvent+Digitizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIEvent+Digitizer.h"; sourceTree = "<group>"; };
 		FC57CCF322F7B8D2003B0AB1 /* UIEvent+Digitizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIEvent+Digitizer.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -184,8 +197,9 @@
 		B907714C22F4CB8E00C106B9 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				B907714D22F4CB8E00C106B9 /* DigitizerTests.m */,
+				B94F58F222F8753D00821194 /* UIView+DigitizerSpec.m */,
 				B907714F22F4CB8E00C106B9 /* Info.plist */,
+				B94F58F022F86D0500821194 /* Helpers */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -256,6 +270,17 @@
 			path = libkern;
 			sourceTree = "<group>";
 		};
+		B94F58F022F86D0500821194 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B94F58F622F88C5200821194 /* UIControl+Testing.h */,
+				B94F58F722F88C5200821194 /* UIControl+Testing.m */,
+				B94F58EC22F86D0000821194 /* FakeView.h */,
+				B94F58ED22F86D0000821194 /* FakeView.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -304,6 +329,7 @@
 			);
 			dependencies = (
 				B907714922F4CB8E00C106B9 /* PBXTargetDependency */,
+				B94F58F522F8776600821194 /* PBXTargetDependency */,
 			);
 			name = DigitizerTests;
 			productName = DigitizerTests;
@@ -343,7 +369,7 @@
 					};
 					B907714522F4CB8E00C106B9 = {
 						CreatedOnToolsVersion = 10.3;
-						TestTargetID = B94F58C122F32D9F00821194;
+						TestTargetID = B907716222F4CC3400C106B9;
 					};
 					B907716222F4CC3400C106B9 = {
 						CreatedOnToolsVersion = 10.3;
@@ -413,7 +439,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B907714E22F4CB8E00C106B9 /* DigitizerTests.m in Sources */,
+				B94F58F322F8753D00821194 /* UIView+DigitizerSpec.m in Sources */,
+				B94F58F122F86D1100821194 /* FakeView.m in Sources */,
+				B94F58F822F88C5200821194 /* UIControl+Testing.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +468,11 @@
 			isa = PBXTargetDependency;
 			target = B907713D22F4CB8D00C106B9 /* Digitizer */;
 			targetProxy = B907717922F4CC4B00C106B9 /* PBXContainerItemProxy */;
+		};
+		B94F58F522F8776600821194 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B907716222F4CC3400C106B9 /* Example */;
+			targetProxy = B94F58F422F8776600821194 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -522,7 +555,8 @@
 		B907715A22F4CB8E00C106B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -532,15 +566,17 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jonathancardasis.DigitizerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Digitizer.app/Digitizer";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Example.app/Example";
 			};
 			name = Debug;
 		};
 		B907715B22F4CB8E00C106B9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -550,8 +586,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jonathancardasis.DigitizerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Digitizer.app/Digitizer";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Example.app/Example";
 			};
 			name = Release;
 		};
@@ -567,6 +604,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jonathancardasis.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -585,6 +623,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jonathancardasis.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

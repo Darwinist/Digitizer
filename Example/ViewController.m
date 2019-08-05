@@ -11,8 +11,8 @@
 #import <Digitizer/Digitizer.h>
 
 @interface ViewController ()
-@property (nonatomic) UIColor *userTapColor;
-@property (nonatomic) UIColor *simulatedTapColor;
+@property (nonatomic, strong) UIColor *userTapColor;
+@property (nonatomic, strong) UIColor *simulatedTapColor;
 @end
 
 @implementation ViewController
@@ -27,7 +27,7 @@
                      ];
     
     self.tapView.indicatorColor = self.simulatedTapColor;
-    [self.tapView simulateTouchesAtPoints:points holdDuration:2.0]; // Simulate a touch
+    [self.tapView simulateMultiTouchAtPoints:points holdDuration:2.0]; // Simulate a touch
     self.tapView.indicatorColor = self.userTapColor;
 }
 

@@ -9,7 +9,7 @@
 #import "TapView.h"
 
 @interface TapView ()
-@property (nullable, nonatomic) NSMutableDictionary<NSString*,UIView*> *activeTapViews;
+@property (nullable, nonatomic, strong) NSMutableDictionary<NSString*,UIView*> *activeTapViews;
 @end
 
 @implementation TapView

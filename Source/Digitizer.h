@@ -15,5 +15,4 @@ FOUNDATION_EXPORT double DigitizerVersionNumber;
 FOUNDATION_EXPORT const unsigned char DigitizerVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <Digitizer/PublicHeader.h>
-//#import <Digitizer/UIView+Digitizer.h>
 #import "UIView+Digitizer.h"

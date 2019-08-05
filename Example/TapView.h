@@ -10,6 +10,6 @@
 
 @interface TapView : UIView
 
-@property (nonatomic) UIColor *indicatorColor;
+@property (nonatomic, strong) UIColor *indicatorColor;
 
 @end

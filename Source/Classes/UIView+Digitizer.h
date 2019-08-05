@@ -26,7 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
  - Parameters:
     - points: An array of CGPoints.
  */
-- (void)simulateTouchesAtPoints:(NSArray<NSValue*>*)points;
+- (void)simulateMultiTouchAtPoints:(NSArray<NSValue*>*)points;
 
 /**
  Send touch events for multiple points at the same time.
@@ -34,7 +34,7 @@ NS_ASSUME_NONNULL_BEGIN
      - points: An array of CGPoints.
      - holdDuration: Duration in seconds for the touch to be held.
  */
-- (void)simulateTouchesAtPoints:(NSArray<NSValue*>*)points holdDuration:(NSTimeInterval)holdDuration;
+- (void)simulateMultiTouchAtPoints:(NSArray<NSValue*>*)points holdDuration:(NSTimeInterval)holdDuration;
 
 @end
 
