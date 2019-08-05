@@ -12,27 +12,36 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIView (Digitizer)
 
-/// Send a touch event to a point on the view, holding that touch for a duration of seconds.
+/**
+ Send a touch event to a point on the view, holding that touch for a duration of seconds.
+ 
+ @param point A point on the view to simulate a tap at.
+ @param holdDuration Duration in seconds for the touch to be held.
+ */
 - (void)simulateLongTouchAtPoint:(CGPoint)point holdDuration:(NSTimeInterval)holdDuration;
 
-/// Send a touch event to a point provided on the view.
+
+/**
+ Send a touch event to a point provided on the view.
+ 
+ @param point A point on the view to simulate a tap at.
+ */
 - (void)simulateTouchAtPoint:(CGPoint)point;
 
 
-
-
 /**
  Send touch events for multiple points at the same time.
- - Parameters:
-    - points: An array of CGPoints.
+ 
+ @param points An array of CGPoints.
  */
 - (void)simulateMultiTouchAtPoints:(NSArray<NSValue*>*)points;
 
+
 /**
  Send touch events for multiple points at the same time.
- - Parameters:
-     - points: An array of CGPoints.
-     - holdDuration: Duration in seconds for the touch to be held.
+ 
+ @param points An array of CGPoints.
+ @param holdDuration Duration in seconds for the touch to be held.
  */
 - (void)simulateMultiTouchAtPoints:(NSArray<NSValue*>*)points holdDuration:(NSTimeInterval)holdDuration;
 

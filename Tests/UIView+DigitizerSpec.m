@@ -7,9 +7,8 @@
 //
 
 #import <XCTest/XCTest.h>
-#import <Digitizer/Digitizer.h>
+#import <Digitizer/UIView+Digitizer.h>
 #import "FakeView.h"
-#import "UIControl+Testing.h"
 
 @interface UIView_DigitizerSpec : XCTestCase
 @property (nonatomic) FakeView *view;

@@ -101,6 +101,7 @@
 		B907717422F4CC3500C106B9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B907718122F4CDF100C106B9 /* TapView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TapView.h; sourceTree = "<group>"; };
 		B907718222F4CDF100C106B9 /* TapView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TapView.m; sourceTree = "<group>"; };
+		B907718422F8D82600C106B9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B94F58DB22F32EF100821194 /* IOHIDEvents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IOHIDEvents.h; sourceTree = "<group>"; };
 		B94F58EB22F380D200821194 /* OSTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSTypes.h; sourceTree = "<group>"; };
 		B94F58EC22F86D0000821194 /* FakeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FakeView.h; sourceTree = "<group>"; };
@@ -225,6 +226,7 @@
 		B94F58B922F32D9F00821194 = {
 			isa = PBXGroup;
 			children = (
+				B907718422F8D82600C106B9 /* README.md */,
 				B907716422F4CC3400C106B9 /* Example */,
 				B907713F22F4CB8E00C106B9 /* Source */,
 				B907714C22F4CB8E00C106B9 /* Tests */,
