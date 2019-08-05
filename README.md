@@ -1,5 +1,5 @@
 <p align="center">
-    <img src=".github/Logo.png" width="500" max-width="90%" alt="ChromaColorPicker 2.0" />
+    <img src=".github/Logo.png" width="800" alt="Digitizer" />
 </p>
 
 <p align="center">
