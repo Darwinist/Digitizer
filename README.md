@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/platform-iOS-lightgray.svg" />
+  <img src="https://img.shields.io/badge/platform-iOS 10+-lightgray.svg" />
   <img src="https://img.shields.io/badge/license-MIT-blue.svg" />
   <img src="https://img.shields.io/badge/Carthage-compatible-green.svg" />
 </p>
